@@ -12,7 +12,7 @@ function convertTimeToBinary(timeString) {
 /**
  * @return {string} time string in format HHmmss
  */
-function getCurrentTime2() {
+function getCurrentTime3() {
   const date = new Date();
   const hours = date.getHours().toString().padStart(2, '0');
   const minutes = date.getMinutes().toString().padStart(2, '0');
@@ -21,7 +21,7 @@ function getCurrentTime2() {
 }
 
 function main() {
-  const currentTime = getCurrentTime2();
+  const currentTime = getCurrentTime3();
   console.log(currentTime, convertTimeToBinary(currentTime));
 }
 
